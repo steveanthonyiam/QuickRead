@@ -1,0 +1,70 @@
+body {
+    background: #000000;
+    color: #00FF41;
+    font-family: 'Abel', sans-serif;
+
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.keyword {
+    background-color: green !important;
+    color: white !important;
+
+}
+
+.blurd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, black 10%, black 30%, rgba(0, 0, 0, 0));
+    height: 300px;
+    position: fixed;
+    width: 100%;
+    top: -170px
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    display: inline;
+    margin-bottom: 30px;
+}
+
+#textToType {
+    display: none;
+}
+
+blink {
+    -webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0
+    animation: 1s linear infinite condemed_blink_effect;
+}
+
+@-webkit-keyframes condemed_blink_effect {
+
+    // pour Safari 4.0-8.0
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemed_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}

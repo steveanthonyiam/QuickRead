@@ -1,0 +1,14 @@
+<div class="article" *ngFor="let a of articles">
+    <p>{{a.source}} | {{a.date | date}}</p>
+    <h1>{{a.title}}</h1>
+    <br><br>
+    <div innerHTML="{{format(a.content) | tagKeyword}}">
+    </div>
+    <div class="menu">
+        <div>
+            <div>> MORE</div>
+            <div><a href="{{a.pdf}}">> PDF</a></div>
+        </div>
+
+    </div>
+</div>

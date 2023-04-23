@@ -1,0 +1,11 @@
+<p>home works!</p>
+
+<div *ngFor="let n of news">
+    <img src="{{n.item.image}}" class="headImage" />
+    <div class="content">
+        <span>{{n.item.datePublished}}</span><br>
+        <h2>{{n.item.headline}} </h2>
+        <br>
+        <a href="{{getLink(n.item.url)}}">{{getLink(n.item.url)}}</a>
+    </div>
+</div>
