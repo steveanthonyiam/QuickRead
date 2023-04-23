@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Matrix Code Rain CSS code</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $.get("http://localhost:3000/economist/top", function (data) {
+        console.log(data);
+
+        $("#title").html(data.title);
+
+        var content = data.content.replace(/\n/g, '<br><br>')
+        var content = data.content.replace(/\\n/g, '<br><br>')
+        $("#content").html(content);
+      });
+    });
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <h1 id="title"></h1>
+  <div id="content">
+    LOADING
+  </div>
+
+  <blink>|</blink>
+  </div>
+
+
+</body>
+
+</html>

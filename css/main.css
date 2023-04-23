@@ -1,0 +1,61 @@
+body {
+  background: #000000;
+  color: #00FF41;
+  font-family: 'Space Mono', monospace;
+
+  font-size: 30px;
+  padding: 0px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+#textToType {
+  display: none;
+}
+
+blink {
+  -webkit-animation: 1s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0
+  animation: 1s linear infinite condemed_blink_effect;
+}
+
+@-webkit-keyframes condemed_blink_effect {
+
+  // pour Safari 4.0-8.0
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemed_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
